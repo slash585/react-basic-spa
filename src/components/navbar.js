@@ -1,19 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
         <nav className="nav-wrapper red darken-2">
             <div className="container">
-                <a href="#" className="brand-logo">RBS</a>
+                <a href="/" className="left brand-logo">RBS</a>
                 <ul className="right">
                     <li>
-                        <a href="/home">Homepage</a>
+                        <Link to="/">Homepage</Link>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <Link to="/about">About</Link>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>

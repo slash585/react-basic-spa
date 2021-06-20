@@ -1,6 +1,7 @@
 import React from 'react'
+import Colors from '../higher-order-components/colors'
 
-function About() {
+function About(props) {
     return (
         <div className="container">
             <h4 className="center">About</h4>
@@ -9,4 +10,4 @@ function About() {
     )
 }
 
-export default About
+export default Colors(About)
